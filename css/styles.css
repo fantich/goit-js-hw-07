@@ -17,20 +17,49 @@ body {
 
 a[href*="index.html"] {
   display: inline-block;
-  margin-bottom: 24px;
+  margin: 24px 0 24px 24px;
   text-decoration: none;
   color: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: color 250ms ease;
+}
+
+a[href*="index.html"]:hover {
+  color: #2e2f42;
+}
+
+.item, .gallery, .text-field-container, .login-form, .widget, .script-section {
+  margin-left: 24px; 
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  gap: 16px;
+  padding: 24px;
+  width: 440px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  list-style: none;
+  margin: 0;
+}
+
+.menu-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: color 250ms ease;
+}
+
+.menu-link:hover {
+  color: #2e2f42;
 }
 
 /* Task-1 */
-
-body {
-  font-family: "Montserrat", sans-serif;
-  color: #2E2F42;
-  background-color: #FFFFFF;
-  margin: 0;
-  padding: 0;
-}
 
 #categories {
   display: flex;

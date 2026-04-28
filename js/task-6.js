@@ -30,7 +30,7 @@ function createBoxes(amount) {
   }
   createBtn.addEventListener('click', () => {
     const value = parseInt(input.value);
-    if(value=>1 && value<=100){
+    if (value>=1 && value<=100){
         createBoxes(value);
         input.value='';
     } else {
